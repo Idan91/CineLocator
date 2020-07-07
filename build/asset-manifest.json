@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "./static/css/main.616001a5.chunk.css",
+    "main.js": "./static/js/main.784bd1be.chunk.js",
+    "main.js.map": "./static/js/main.784bd1be.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.bcb14eec.js",
+    "runtime-main.js.map": "./static/js/runtime-main.bcb14eec.js.map",
+    "static/js/2.f2b0dcbd.chunk.js": "./static/js/2.f2b0dcbd.chunk.js",
+    "static/js/2.f2b0dcbd.chunk.js.map": "./static/js/2.f2b0dcbd.chunk.js.map",
+    "index.html": "./index.html",
+    "precache-manifest.88baa417aef106ad344547c77ba291bc.js": "./precache-manifest.88baa417aef106ad344547c77ba291bc.js",
+    "service-worker.js": "./service-worker.js",
+    "static/css/main.616001a5.chunk.css.map": "./static/css/main.616001a5.chunk.css.map",
+    "static/js/2.f2b0dcbd.chunk.js.LICENSE.txt": "./static/js/2.f2b0dcbd.chunk.js.LICENSE.txt",
+    "static/media/index.css": "./static/media/CineLocator_Logo.d9be8e83.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bcb14eec.js",
+    "static/js/2.f2b0dcbd.chunk.js",
+    "static/css/main.616001a5.chunk.css",
+    "static/js/main.784bd1be.chunk.js"
+  ]
+}

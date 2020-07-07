@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --h1-font-size: 50px;
+
+  --btn-border-radius: 20px;
+  --btn-padding: 6px 48px;
+  --btn-font-size: 18px;
+  --btn-margin: 10px 0px 5px 0px;
+
+  --logo-main-margin: -10px 0px 30px 0px;
+  --logo-main-width: 500px;
+
+  --logo-homepage-margin: 75px 0px;
+  --logo-homepage-width: 900px;
+
+  --start-btn-font-size: 25px;
+
+  --city-select-height: 30px;
+  --city-select-width: 200px;
+  --city-select-border-radius: 10px;
+  --city-select-font-size: 18px;
+  --city-select-padding: 2px 8px;
+
+  --map-container-margin: -15px 0px 15px 0px;
+  --map-container-padding: 0;
+  --map-container-height: 55vh;
+  --map-container-width: 70%;
+  --map-container-border-radius: 10px;
+  --map-container-border: 5px solid var(--main-bright);
+  --map-container-box-shadow: 0px 20px 30px var(--main-bg-color),
+    0px -20px 30px var(--secondary-color);
+
+  --footer-height: 4vh;
+  --footer-width: 100%;
+  --footer-left: -50%;
+  --footer-font-size: 14px;
+  --footer-letter-spacing: 4px;
+
+  /*Colors*/
+  --main-bg-color: #202137;
+  --secondary-color: #2c2c45;
+  --main-bright: #4f5179;
+  /* --secondary-bg-color: #4c0880; */
+  --main-orange: #fd5b0a;
+  --main-purple: #c830d1;
+}
+
+* {
+  text-align: center;
+  font-family: "Heebo", Helvetica, Arial, sans-serif;
+  direction: rtl;
+}
+
+html,
+body {
+  background-color: var(--main-bg-color);
+  background: linear-gradient(
+    0deg,
+    var(--secondary-color) 0%,
+    var(--secondary-color) 36%,
+    var(--main-bg-color) 36%
+  );
+
+  height: 100%;
+}
+
+h1 {
+  font-size: var(--h1-font-size);
+  color: white;
+}
+
+h4 {
+  color: white;
+  margin: 10px;
+}
+
+.btn {
+  border: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-radius: var(--btn-border-radius);
+  padding: var(--btn-padding);
+  font-size: var(--btn-font-size);
+  margin: var(--btn-margin);
+  color: white;
+  background-color: var(--main-orange);
+  background: linear-gradient(-90deg, rgb(142, 4, 142), var(--main-orange));
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 5px 20px rgb(76, 76, 157), 0px -5px 20px rgb(1, 1, 12);
+}
+
+.logo {
+  position: relative;
+  content: url("images/CineLocator_Logo.svg");
+  transition: all var(--transition-speed);
+  left: -50%;
+  transform: translate(50%);
+}
+
+.logo-main {
+  position: relative;
+  margin: var(--logo-main-margin);
+  width: var(--logo-main-width);
+}
+
+.logo-homepage {
+  margin: var(--logo-homepage-margin);
+  width: var(--logo-homepage-width);
+}
+
+.start-btn {
+  font-size: var(--start-btn-font-size);
+}
+
+.city-select {
+  border: none;
+  outline: none;
+  background-color: rgb(227, 227, 227);
+  height: var(--city-select-height);
+  width: var(--city-select-width);
+  border-radius: var(--city-select-border-radius);
+  font-size: var(--city-select-font-size);
+  padding: var(--city-select-padding);
+  direction: rtl;
+  background-color: var(--secondary-color);
+  color: white;
+  border: 1px solid var(--main-bright);
+  /* text-indent: 50%; */
+}
+
+option {
+  text-align: center;
+}
+
+.map-container {
+  position: relative;
+  left: -50%;
+  transform: translateX(50%);
+  margin: var(--map-container-margin);
+  padding: var(--map-container-padding);
+  height: var(--map-container-height);
+  width: var(--map-container-width);
+  border-radius: var(--map-container-border-radius);
+  border: var(--map-container-border);
+  box-shadow: var(--map-container-box-shadow);
+  overflow: hidden;
+}
+
+#city-coordinates {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  height: var(--footer-height);
+  width: var(--footer-width);
+  left: var(--footer-left);
+  font-size: var(--footer-font-size);
+  letter-spacing: var(--footer-letter-spacing);
+  transform: translateX(50%);
+  color: rgb(208, 208, 208);
+}
+
+@media screen and (max-width: 1600px) {
+  :root {
+    --h1-font-size: 40px;
+
+    /* --btn-border-radius: 20px; */
+    --btn-padding: 5px 40px;
+    --btn-font-size: 15px;
+    --btn-margin: 5px 0px 5px 0px;
+
+    --logo-main-margin: -15px 0px 25px 0px;
+    --logo-main-width: 400px;
+
+    /* --logo-homepage-margin: 55px 0px; */
+    /* --logo-homepage-width: 700px; */
+
+    /* --start-btn-font-size: 25px; */
+
+    --city-select-height: 28px;
+    /* --city-select-width: 200px; */
+    /* --city-select-border-radius: 10px; */
+    --city-select-font-size: 15px;
+    /* --city-select-padding: 2px 8px; */
+
+    --map-container-margin: -15px 0px 15px 0px;
+    /* --map-container-padding: 0; */
+    --map-container-height: 53vh;
+    /* --map-container-width: 70%; */
+    /* --map-container-border-radius: 10px; */
+    /* --map-container-border: 5px solid var(--main-bright); */
+    /* --map-container-box-shadow: 0px 20px 30px var(--main-bg-color), */
+    /* 0px -20px 30px var(--secondary-color); */
+
+    /* --footer-height: 4vh; */
+    /* --footer-width: 100%; */
+    /* --footer-left: -50%; */
+    --footer-font-size: 12px;
+    /* --footer-letter-spacing: 4px; */
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  :root {
+    --h1-font-size: 35px;
+
+    /* --btn-border-radius: 20px; */
+    /* --btn-padding: 5px 40px; */
+    /* --btn-font-size: 15px; */
+    --btn-margin: 4px 0px 0px 0px;
+
+    --logo-main-margin: -22px 0px 25px 0px;
+    --logo-main-width: 350px;
+
+    --logo-homepage-margin: 55px 0px;
+    --logo-homepage-width: 550px;
+
+    --start-btn-font-size: 20px;
+
+    --city-select-height: 26px;
+    --city-select-width: 185px;
+    /* --city-select-border-radius: 10px; */
+    --city-select-font-size: 15px;
+    /* --city-select-padding: 2px 8px; */
+
+    --map-container-margin: -20px 0px 15px 0px;
+    --map-container-height: 53vh;
+    /* --map-container-padding: 0;
+    --map-container-width: 70%;
+    --map-container-border-radius: 10px;
+    --map-container-border: 5px solid var(--main-bright);
+    --map-container-box-shadow: 0px 20px 30px var(--main-bg-color),
+      0px -20px 30px var(--secondary-color); */
+
+    --footer-height: 3.5vh;
+    /* --footer-width: 100%;
+    --footer-left: -50%; */
+    --footer-font-size: 11px;
+    /* --footer-letter-spacing: 4px; */
+  }
+}
+
+@media screen and (max-height: 700px) {
+  :root {
+    /* --map-container-margin: -20px 0px 15px 0px; */
+    --map-container-height: 52vh;
+
+    --footer-height: 3vh;
+    --footer-font-size: 13px;
+  }
+}
